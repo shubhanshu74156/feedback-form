@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 5px;
+            background-color:rgb(184, 155, 231);
+        }
+        h1{
+            background-color: rgb(95, 35, 215);
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: auto;
+            
+        }
+        #content{
+            text-align: center;
+        }
+        hr{
+            margin-right: 10px;
+        }
+        .heading{
+            border: 2px solid white;
+            border-radius: 10px;
+            text-align: left;
+            padding-left: 10px;
+            background-color: white;
+        }
+        p{
+            background-color: white;
+        }
+        #name{
+            margin: auto;
+        }
+        #astrik{
+            color: red;
+            background-color: white;
+        }
+        .information{
+            border: 2px solid white;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            background-color: white;
+        }
+        #textinput{
+            background-color: white;
+        }
+        #title{
+            text-align: center;
+            margin: 10px;
+        }
+        .table{
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        .suggestion{
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+        #submit{
+            color:  rgb(184, 155, 231);
+            background-color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin: auto;
+        }
+        .objectives{
+            margin: auto;
+            position: relative;
+            width: 50px;
+        }
+        #reset{
+            color: white;
+            background-color: rgb(82, 0, 165) ;
+            border: 2px solid  rgb(184, 155, 231);
+            border-radius: 5px;
+            margin: auto;
+            padding: 2.1px;
+        }
+        #footer{
+            background-color: rgb(184, 155, 231) ;
+            text-align: center;
+            display: block;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        textarea{
+            margin: auto;
+            background-color: white;
+            
+        }
+        .btn{
+            border: 2px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1 id="title">Feedback Form</h1>
+    <p>This is my feedback form project by using Html,CSS and javascript.</p>
+    <hr>
+    <p>The name and photo associated with your google account will be reecorded when you upload files and submit this form.</p>
+    <p><span id="astrik">*Required</span></p>
+    </div>
+    
+    <div class="information">
+        <p id="">Your Name<span id="astrik">*</span></p>
+        <input type="text" name="" id="textinput">
+        <p>E-mail<span id="astrik">*</span></p>
+        <input type="text" name="" id="textinput">
+        <p>Mobile Number<span id="astrik">*</span></p>
+        <input type="text" name="" id="textinput">
+    </div>
+    <div class="table">
+        <div id="textinput">
+            <table id="textinput">
+                <thead>
+                    <tr>
+                        <th id="textinput">Objectives</th>
+                        <th id="textinput" class="objectives">Good</th>
+                        <th id="textinput" class="objectives">Fair</th>
+                        <th id="textinput" class="objectives">Poor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="textinput">HTML work<span id="astrik">*</span></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="htmlwork" id=""></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="htmlwork" id=""></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="htmlwork" id=""></td>
+                    </tr>
+                    <tr>
+                        <td id="textinput">CSS work<span id="astrik">*</span></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="csswork" id=""></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="csswork" id=""></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="csswork" id=""></td>
+                    </tr>
+                    <tr>
+                        <td id="textinput">javascript work<span id="astrik">*</span></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="javascriptwork" id=""></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="javascriptwork" id=""></td>
+                        <td id="textinput" class="objectives"><input type="radio" name="javascriptwork" id=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="textinput">
+            <label for="" id="textinput">Overall Rating(in scale of 10)<span id="astrik">*</span></label>
+            <select name="rating" id="textinput">
+                <option value="" id="textinput">1</option>
+                <option value="" id="textinput">2</option>
+                <option value="" id="textinput">3</option>
+                <option value="" id="textinput">4</option>
+                <option value="" id="textinput">5</option>
+                <option value="" id="textinput">6</option>
+                <option value="" id="textinput">7</option>
+                <option value="" id="textinput">8</option>
+                <option value="" id="textinput">9</option>
+                <option value="" id="textinput">10</option>
+            </select>
+        </div>
+    </div>
+    <div id="textinput" class="suggestion">
+        <p>Any suggestion for improvememt.(Optional)</p>
+        <textarea name="" cols="40" rows="10">Your answer</textarea>
+    </div>
+    <div class="btn">
+        <button id="submit">Submit</button>
+        <button id="reset">Reset form</button>
+    </div>
+    <hr>
+    <footer>
+        <p id="footer">This form was created by <strong>Shubhanshu Tiwari</strong></p>
+    </footer>
+    
+</body>
+</html>
